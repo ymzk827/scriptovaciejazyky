@@ -12,7 +12,7 @@
 </head>
 <body>
   
-  <?php include "parts/header.php"?>
+  <?php include "sablona/parts/header.php"?>
   
   <main>
     <section class="banner">
@@ -28,7 +28,7 @@
       </div>
     </section>
       <section class="container">
-      <div class="accordion">
+      <!-- <div class="accordion">
         <div class="question">Otázka 1</div>
         <div class="answer">Odpoveď 1</div>
       </div>
@@ -38,14 +38,21 @@
       </div>
       <div class="accordion">
         <div class="question">Otázka 3</div>
-        <div class="answer">Odpoveď 3</div>
+        <div class="answer">Odpoveď 3</div> -->
+
+        <?php
+        include_once "sablona/otazky.php";
+        use otazkyodpovede\QnA;
+        $qna = new QnA();
+        $qna->readQnA();
+        ?>
       </div>
     </section>
     </section>
   </div>
   </main>
 
-  <?php include "parts/footer.php"?>
+  <?php include "sablona/parts/footer.php"?>
   
 <script src="js/accordion.js"></script>
 <script src="js/menu.js"></script>

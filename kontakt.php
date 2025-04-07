@@ -12,7 +12,7 @@
 </head>
 <body>
   
-  <?php include "parts/header.php"?>
+  <?php include "sablona/parts/header.php"?>
 
   <main>
     <section class="banner">
@@ -50,7 +50,7 @@
       </div>
     </section>
   </main>
-  <?php include "parts/footer.php"?>
+  <?php include "sablona/parts/footer.php"?>
   <script src="js/menu.js"></script>
 </body>
 </html>
